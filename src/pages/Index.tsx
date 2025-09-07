@@ -47,7 +47,7 @@ const Index: React.FC = () => {
 
         // Número fixo para redirecionamento
 const numeroData = {
-  telefone: "5591985466481", // Coloca o número que tu quiser
+  telefone: "5591982218891", // Coloca o número que tu quiser
   mensagem: "Olá! Tenho interesse. Sou o cliente XXX me manda as promoções por gentileza!! (obrigatório o envio desta mensagem para ser atendido)"
 };
 
@@ -92,7 +92,7 @@ const numeroData = {
         console.error("[INDEX] Erro:", err);
         setError(err.message || "Ocorreu um erro. Redirecionando alternativo...");
         setTimeout(() => {
-          const defaultPhone = "5591985466481";
+          const defaultPhone = "5591982218891";
           const defaultMsg = "Olá! Tenho interesse. Me envia promoções, por favor!";
           const altUrl = `https://api.whatsapp.com/send/?phone=${defaultPhone}&text=${encodeURIComponent(defaultMsg)}&type=phone_number&app_absent=0`;
           window.location.href = altUrl;
